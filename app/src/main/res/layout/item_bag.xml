@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="115dp"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="@drawable/bordered_edit_text"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp">
+
+    <ImageView
+        android:id="@+id/ivBag"
+        android:layout_width="65dp"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@color/grey"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvBag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:text="ASHDKSAHDKHASKDHKJAS SADASDADASASDAAAAAAAA" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp">
+            <TextView
+                android:id="@+id/tvBagMarca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                tools:ignore="MissingConstraints"
+                tools:text="kotlinman"
+                android:layout_marginRight="17dp"/>
+            <TextView
+                android:id="@+id/tvBagSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                tools:ignore="MissingConstraints"
+                tools:text="kotlinman"
+                android:layout_marginRight="17dp"/>
+            <TextView
+                android:id="@+id/tvBagPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                tools:ignore="MissingConstraints"
+                tools:text="kotlinman" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnDelete"
+        android:layout_width="45dp"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:background="@color/transparente"
+        android:src="@drawable/delete"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="5dp"
+        />
+
+</LinearLayout>

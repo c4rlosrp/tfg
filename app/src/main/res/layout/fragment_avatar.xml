@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".AvatarFragment">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nvStyle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/nav_style"
+        android:outlineSpotShadowColor="@color/transparente"
+
+        android:foregroundGravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oswald_medium"
+            android:text="DISEÑA TU ESTILO"
+            android:layout_gravity="center"
+            android:textSize="25dp"
+            android:textColor="@color/black2"/>
+    </com.google.android.material.navigation.NavigationView>
+
+    <ImageButton
+        android:id="@+id/btnTopClothes"
+        android:layout_width="25dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@color/grey"
+        android:padding="6dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/tres_lineas"/>
+
+    <ImageView
+        android:id="@+id/ivTopClothes"
+        android:layout_width="361dp"
+        android:layout_height="335dp"
+        android:layout_below="@id/nvStyle"
+        android:layout_centerInParent="true"
+        android:elevation="1dp"/>
+    <ImageButton
+        android:id="@+id/btnInfo"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/nvStyle"
+        android:layout_marginRight="5dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/info"
+        android:backgroundTint="@color/transparente"/>
+
+    <ImageView
+        android:id="@+id/ivBottomClothes"
+        android:layout_width="361dp"
+        android:layout_height="335dp"
+        android:layout_below="@id/ivTopClothes"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="-55dp"
+        android:padding="43dp"
+        android:scaleType="fitCenter" />
+
+    <ImageButton
+        android:id="@+id/btnBottomClothes"
+        android:layout_width="25dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@color/grey"
+        android:padding="6dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/tres_lineas"/>
+
+
+</RelativeLayout>

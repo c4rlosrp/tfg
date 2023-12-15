@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="125dp"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="@drawable/bordered_edit_text"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvCompra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:paddingLeft="15dp"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:text="ASHDKSAHDKHASKDHKJAS SADASDADASASDAAAAAAAA" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="5dp"
+            android:paddingLeft="15dp">
+            <TextView
+                android:id="@+id/tvCompraMarca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                tools:ignore="MissingConstraints"
+                tools:text="kotlinman"
+                android:layout_marginRight="17dp"/>
+            <TextView
+                android:id="@+id/tvCompraSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                tools:ignore="MissingConstraints"
+                tools:text="kotlinman"
+                android:layout_marginRight="17dp"/>
+            <TextView
+                android:id="@+id/tvCompraPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                tools:ignore="MissingConstraints"
+                tools:text="kotlinman" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="5dp"
+            android:paddingLeft="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                tools:ignore="MissingConstraints"
+                android:text="Fecha:"/>
+            <TextView
+                android:id="@+id/tvCompraFecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                tools:ignore="MissingConstraints"
+                android:text="Fecha:"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

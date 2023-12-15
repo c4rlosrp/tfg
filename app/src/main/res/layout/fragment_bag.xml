@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BagFragment"
+    android:orientation="vertical"
+    android:background="@color/background">
+    <com.google.android.material.navigation.NavigationView
+        android:layout_gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/nav_style"
+        android:outlineSpotShadowColor="@color/transparente"
+
+        android:foregroundGravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oswald_medium"
+            android:text="CESTA"
+            android:layout_gravity="center"
+            android:textSize="25dp"
+            android:textColor="@color/black2"/>
+    </com.google.android.material.navigation.NavigationView>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:src="@drawable/yourbag"
+        android:layout_marginTop="40dp"/>
+    <LinearLayout
+        android:layout_width="325dp"
+        android:layout_height="105dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cesta vacía"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textColor="@color/black2"
+            android:fontFamily="@font/ptsans_narrow_bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="¿Aún no tienes ningún artículo en la cesta? Disfruta de nuestra gran variedad de diseños y crea tu estilo."
+            android:textSize="19dp"
+            android:textColor="@color/black2"
+            android:fontFamily="@font/ptsans_narrow_bold"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btnNovedades"
+        android:layout_width="130dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:text="NOVEDADES"
+        android:textColor="@color/black2"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@drawable/bordered_edit_text"
+        android:fontFamily="@font/oswald_semibold"
+        android:clickable="true"/>
+</LinearLayout>

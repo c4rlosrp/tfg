@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".LoginFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:background="@color/transparente"
+                android:padding="12dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/long_left_arrow" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:src="@drawable/blaztt_button" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CREA TÚ CUENTA"
+            android:fontFamily="@font/oswald_medium"
+            android:textSize="27dp"
+            android:textColor="@color/black2"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+
+        <EditText
+            android:id="@+id/etNombre"
+            android:layout_width="375dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bordered_edit_text"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/oswald_regular"
+            android:paddingLeft="20dp"
+            android:hint="Nombre"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:id="@+id/llObligatorioNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="30dp"
+            android:visibility="invisible">
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:src="@drawable/warning"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Campo obligatorio"
+                android:textColor="#6C0A0A"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etApellidos"
+            android:layout_width="375dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bordered_edit_text"
+            android:fontFamily="@font/oswald_regular"
+            android:paddingLeft="20dp"
+            android:hint="Apellidos"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:id="@+id/llObligatorioApellidos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="30dp"
+            android:visibility="invisible">
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:src="@drawable/warning"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Campo obligatorio"
+                android:textColor="#6C0A0A"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etUsuario"
+            android:layout_width="375dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bordered_edit_text"
+            android:fontFamily="@font/oswald_regular"
+            android:paddingLeft="20dp"
+            android:hint="Usuario"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:id="@+id/llObligatorioUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="30dp"
+            android:visibility="invisible">
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:src="@drawable/warning"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Campo obligatorio"
+                android:textColor="#6C0A0A"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etCorreo"
+            android:layout_width="375dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bordered_edit_text"
+            android:fontFamily="@font/oswald_regular"
+            android:paddingLeft="20dp"
+            android:hint="Correo"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:id="@+id/llObligatorioCorreo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="30dp"
+            android:visibility="invisible">
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:src="@drawable/warning"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Campo obligatorio"
+                android:textColor="#6C0A0A"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etPassword1"
+            android:layout_width="375dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bordered_edit_text"
+            android:fontFamily="@font/oswald_regular"
+            android:inputType="textPassword"
+            android:layout_marginBottom="2dp"
+            android:paddingLeft="20dp"
+            android:hint="Contraseña"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="372dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="24dp"
+            android:fontFamily="@font/oswald_regular"
+            android:gravity="left"
+            android:text="Al menos 8 carácteres conteniendo Letras mayúsculas, minúsculas y números"
+            android:textColor="@color/black2"
+            android:textSize="13dp" />
+
+        <LinearLayout
+            android:id="@+id/llObligatorioPassword1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="30dp"
+            android:visibility="invisible">
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:src="@drawable/warning"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Campo obligatorio"
+                android:textColor="#6C0A0A"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etPassword2"
+            android:layout_width="375dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bordered_edit_text"
+            android:fontFamily="@font/oswald_regular"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:hint="Repetir contraseña"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:id="@+id/llObligatorioPassword2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="30dp"
+            android:visibility="invisible">
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:src="@drawable/warning"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Campo obligatorio"
+                android:textColor="#6C0A0A"/>
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/cbRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="left"
+            android:layout_marginLeft="23dp"
+            android:buttonTint="@color/black2"
+            android:text="Acepto las condiciones de uso y compra"
+            android:textColor="@color/black2"
+            android:textSize="15dp"
+            android:fontFamily="@font/oswald_regular"/>
+        <LinearLayout
+            android:id="@+id/llObligatorioCB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="30dp"
+            android:visibility="invisible">
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:src="@drawable/warning"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Campo obligatorio"
+                android:textColor="#6C0A0A"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btnCrearCuenta"
+            android:layout_width="190dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/black2"
+            android:text="Crear Cuenta"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bordered_edit_text"
+            android:fontFamily="@font/oswald_semibold"
+            android:clickable="true"/>
+    </LinearLayout>
+
+</ScrollView>
